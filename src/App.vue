@@ -145,7 +145,7 @@ export default {
   data() {
     return {
       language: 'en',
-      language_select: true,
+      language_select: false,
       currentQuestionIndex: 0,
       showResults: false,
       answers: Array(8).fill(null),
@@ -391,7 +391,6 @@ ar: {
       this.showResults = false;
       this.results = [];
       this.categoryCount = { A: 0, B: 0, C: 0, D: 0 ,E: 0};
-      this.language_select = true;
     },
   },
   watch: {
