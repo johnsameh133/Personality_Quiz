@@ -174,54 +174,34 @@ export default {
       language_select: false,
       currentQuestionIndex: 0,
       showResults: false,
-      answers: Array(20).fill(null),
+      answers: Array(10).fill(null),
       results: [],
       totalScore: 0,
       questions: [],
       questions_en: [
-        { text: "Christ is the reference point of my decisions.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "My schedule reflects my spiritual values.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I seek God’s will before major commitments.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I can say no to good things for better ones.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I don’t live in constant hurry or distraction.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "My purpose is clearer than my ambitions.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I measure success by faithfulness, not visibility.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I regularly re-align my priorities in prayer.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I choose eternal impact over instant gratification.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "My life direction brings me closer to Christ.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I care about the salvation and growth of others.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I try to obey God’s commandments even when difficult.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I share Christ through life, not just words.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I serve without seeking recognition.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "My life points others toward Christ.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I accept that God may not reveal my full mission at once.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I trust that my calling unfolds over seasons, not instantly.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I continue walking with God even when the direction feels unclear.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I choose faithfulness in small steps rather than waiting for perfect certainty.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I trust that God guides those who move in humility and prayer.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] }
+        { text: "I trust God with outcomes I cannot control.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "My decisions reflect Scripture, not feelings.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I obey even when it costs me comfort.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I pray before reacting.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I anchor my identity in Christ, not approval.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "Fear does not govern my yes or no.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I take steps, not just intentions.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I repent quickly when convicted.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I believe God loves me even when I’m weak.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "Christ is authority, not decoration, in my life.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] }
       ],
       // Mirror English questions for Arabic for now as no translations provided
       questions_ar: [
-        { text: "Christ is the reference point of my decisions.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "My schedule reflects my spiritual values.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I seek God’s will before major commitments.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I can say no to good things for better ones.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I don’t live in constant hurry or distraction.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "My purpose is clearer than my ambitions.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I measure success by faithfulness, not visibility.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I regularly re-align my priorities in prayer.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I choose eternal impact over instant gratification.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "My life direction brings me closer to Christ.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I care about the salvation and growth of others.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I try to obey God’s commandments even when difficult.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I share Christ through life, not just words.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I serve without seeking recognition.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "My life points others toward Christ.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I accept that God may not reveal my full mission at once.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I trust that my calling unfolds over seasons, not instantly.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I continue walking with God even when the direction feels unclear.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I choose faithfulness in small steps rather than waiting for perfect certainty.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I trust that God guides those who move in humility and prayer.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] }
+        { text: "I trust God with outcomes I cannot control.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "My decisions reflect Scripture, not feelings.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I obey even when it costs me comfort.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I pray before reacting.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I anchor my identity in Christ, not approval.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "Fear does not govern my yes or no.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I take steps, not just intentions.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I repent quickly when convicted.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I believe God loves me even when I’m weak.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "Christ is authority, not decoration, in my life.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] }
       ]
     };
   },
@@ -242,31 +222,31 @@ export default {
       const totalScore = this.answers.reduce((acc, curr) => acc + (parseInt(curr) || 0), 0);
       
       let resultKey = '';
-      if (totalScore >= 80) resultKey = 'lifeResult';
-      else if (totalScore >= 60) resultKey = 'sincereResult';
-      else if (totalScore >= 40) resultKey = 'misalignedResult';
-      else resultKey = 'notCentralResult';
+      if (totalScore >= 40) resultKey = 'faithGoverned';
+      else if (totalScore >= 30) resultKey = 'believingHesitating';
+      else if (totalScore >= 20) resultKey = 'faithWithoutSurrender';
+      else resultKey = 'faithReduced';
 
       const resultsData = {
-        'lifeResult': {
-          title: "Life in Christ",
-          description: "Your answers indicate that Christ is largely governing your decisions, time, and direction. Your life shows purpose, not just activity. Remain watchful, because spiritual order must be guarded through prayer and regular re-alignment.",
-          match: "But seek first the kingdom of God and His righteousness, and all these things shall be added to you. (Matthew 6:33)"
+        'faithGoverned': {
+          title: "40–50 : Faith Governed by Obedience",
+          description: "Your answers show that faith is not only something you believe, but something you live. You are learning to trust God in decisions, not only in thoughts. Remain watchful, because faith is preserved through humility and daily obedience.",
+          match: "“Not everyone who says to Me, ‘Lord, Lord,’ shall enter the kingdom of heaven, but he who does the will of My Father in heaven.” (Matthew 7:21)"
         },
-        'sincereResult': {
-          title: "Sincere but Not Fully Ordered",
-          description: "You desire to live for Christ, yet some areas of life are being shaped by distraction, pressure, or competing priorities. This is a vulnerable place spiritually: drift often begins here quietly. God is calling you to restore clear spiritual order before compromise becomes normal.",
-          match: "Nevertheless I have this against you, that you have left your first love. Remember therefore from where you have fallen; repent and do the first works... (Revelation 2:4–5)"
+        'believingHesitating': {
+          title: "30–39 : Believing but Hesitating",
+          description: "You believe in Christ, yet fear, overthinking, or self-protection sometimes weakens obedience. This is a fragile place spiritually: faith exists, but courage wavers. God is calling you to move forward in trust, not wait for perfect certainty.",
+          match: "“Immediately the father of the child cried out and said with tears, ‘Lord, I believe; help my unbelief!’” (Mark 9:24)"
         },
-        'misalignedResult': {
-          title: "Misaligned Direction",
-          description: "Your life may be busy and outwardly committed, but it is not clearly centered on Christ’s will. There is likely fatigue, divided focus, or hidden resistance. This is a call to pause, repent where needed, and bring your priorities back under spiritual obedience.",
-          match: "A double-minded man is unstable in all his ways. (James 1:8)"
+        'faithWithoutSurrender': {
+          title: "20–29 : Faith Without Full Surrender",
+          description: "Christ may be honored in words, but not consistently followed in decisions. You may know the truth, yet still be ruled by fear, control, or comfort. This is a call to repentance, to let faith move from ideas into obedience.",
+          match: "“But why do you call Me ‘Lord, Lord,’ and not do the things which I say?” (Luke 6:46)"
         },
-        'notCentralResult': {
-          title: "Christ No Longer Central",
-          description: "Something other than Christ is currently directing your life ; fear, comfort, people, or survival. This does not mean you have lost faith, but it does mean your life has lost spiritual order. This is a serious call to confession, repentance, and return to Christ as Lord.",
-          match: "For My people have committed two evils: They have forsaken Me, the fountain of living waters, And hewn themselves cisterns... (Jeremiah 2:13)"
+        'faithReduced': {
+          title: "10–19 : Faith Reduced to Grow",
+          description: "Your faith may exist outwardly, but it is not currently shaping how you live. Christ is present in language, but not in authority. This is not rejection, it is a strong invitation to return to real trust, repentance, and surrender.",
+          match: "“Having a form of godliness but denying its power. And from such people turn away!” (2 Timothy 3:5)"
         }
       };
 
