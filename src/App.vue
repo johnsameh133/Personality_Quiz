@@ -13,7 +13,7 @@
 
 
         
-        <div>Self assessment for week 1: Purpose & priorities</div>
+        <div>Self assessment for Week 2: Faith</div>
                 <br/>    
 
 
