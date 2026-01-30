@@ -13,7 +13,7 @@
 
 
         
-        <div>Self assessment for Week 2: Faith</div>
+        <div>WEEK 3 : PURITY OF HEART</div>
                 <br/>    
 
 
@@ -179,29 +179,29 @@ export default {
       totalScore: 0,
       questions: [],
       questions_en: [
-        { text: "I trust God with outcomes I cannot control.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "My decisions reflect Scripture, not feelings.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I obey even when it costs me comfort.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I pray before reacting.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I anchor my identity in Christ, not approval.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "Fear does not govern my yes or no.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I take steps, not just intentions.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I repent quickly when convicted.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I believe God loves me even when I’m weak.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "Christ is authority, not decoration, in my life.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] }
+        { text: "My intentions are clean before God.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I am the same person privately and publicly.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I avoid comparison and envy.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I confess sin instead of managing it.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I protect my eyes, ears, and mind.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I don’t manipulate or exaggerate.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "My relationships are clean from hidden agendas.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I forgive instead of resenting silently.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I refuse flattery, gossip, or secret alliances.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "My conscience is at peace before God.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] }
       ],
       // Mirror English questions for Arabic for now as no translations provided
       questions_ar: [
-        { text: "I trust God with outcomes I cannot control.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "My decisions reflect Scripture, not feelings.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I obey even when it costs me comfort.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I pray before reacting.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I anchor my identity in Christ, not approval.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "Fear does not govern my yes or no.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I take steps, not just intentions.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I repent quickly when convicted.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I believe God loves me even when I’m weak.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "Christ is authority, not decoration, in my life.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] }
+        { text: "My intentions are clean before God.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I am the same person privately and publicly.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I avoid comparison and envy.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I confess sin instead of managing it.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I protect my eyes, ears, and mind.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I don’t manipulate or exaggerate.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "My relationships are clean from hidden agendas.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I forgive instead of resenting silently.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I refuse flattery, gossip, or secret alliances.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "My conscience is at peace before God.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] }
       ]
     };
   },
@@ -229,24 +229,24 @@ export default {
 
       const resultsData = {
         'faithGoverned': {
-          title: "40–50 : Faith Governed by Obedience",
-          description: "Your answers show that faith is not only something you believe, but something you live. You are learning to trust God in decisions, not only in thoughts. Remain watchful, because faith is preserved through humility and daily obedience.",
-          match: "“Not everyone who says to Me, ‘Lord, Lord,’ shall enter the kingdom of heaven, but he who does the will of My Father in heaven.” (Matthew 7:21)"
+          title: "40–50 : A Heart Being Kept Before God",
+          description: "Your answers indicate a life that is being lived in honesty before God. There is confession, repentance, and desire for inner integrity. Continue guarding the heart, because purity is preserved through humility and watchfulness.",
+          match: "“Blessed are the pure in heart, for they shall see God.” (Matthew 5:8)"
         },
         'believingHesitating': {
-          title: "30–39 : Believing but Hesitating",
-          description: "You believe in Christ, yet fear, overthinking, or self-protection sometimes weakens obedience. This is a fragile place spiritually: faith exists, but courage wavers. God is calling you to move forward in trust, not wait for perfect certainty.",
-          match: "“Immediately the father of the child cried out and said with tears, ‘Lord, I believe; help my unbelief!’” (Mark 9:24)"
+          title: "30–39 : Mixed Motives, Unsettled Conscience",
+          description: "You desire to be right with God, but some areas may still be hidden, avoided, or unexamined. This is the place where God gently calls for deeper honesty, not perfection.",
+          match: "“Behold, You desire truth in the inward parts, And in the hidden part You will make me to know wisdom.” (Psalm 51:6)"
         },
         'faithWithoutSurrender': {
-          title: "20–29 : Faith Without Full Surrender",
-          description: "Christ may be honored in words, but not consistently followed in decisions. You may know the truth, yet still be ruled by fear, control, or comfort. This is a call to repentance, to let faith move from ideas into obedience.",
-          match: "“But why do you call Me ‘Lord, Lord,’ and not do the things which I say?” (Luke 6:46)"
+          title: "20–29 : Divided Inner Life",
+          description: "There may be compromise, secrecy, or inner conflict. This is not hopelessness; it is an invitation to open what has been closed and allow God to cleanse what has been hidden.",
+          match: "“He who covers his sins will not prosper, But whoever confesses and forsakes them will have mercy.” (Proverbs 28:13)"
         },
         'faithReduced': {
-          title: "10–19 : Faith Reduced to Grow",
-          description: "Your faith may exist outwardly, but it is not currently shaping how you live. Christ is present in language, but not in authority. This is not rejection, it is a strong invitation to return to real trust, repentance, and surrender.",
-          match: "“Having a form of godliness but denying its power. And from such people turn away!” (2 Timothy 3:5)"
+          title: "10–19 : Conscience in Need of Healing",
+          description: "This indicates a heart burdened by unconfessed or unresolved inner struggle. God is not far, but He is waiting for truth. Healing begins when what is hidden is brought into the light.",
+          match: "“When I kept silent, my bones grew old. Through my groaning all the day long. For day and night Your hand was heavy upon me; My vitality was turned into the drought of summer.” (Psalm 32:3–4)"
         }
       };
 
