@@ -13,7 +13,7 @@
 
 
         
-        <div>WEEK 4 : SELF-DENIAL</div>
+        <div>WEEK 4 : SELF-DENIAL</div
                 <br/>    
 
 
@@ -229,24 +229,24 @@ export default {
 
       const resultsData = {
         'faithGoverned': {
-          title: "40–50: A Will Being Surrendered",
-          description: "Your answers show a growing willingness to let Christ lead rather than the ego.\nYou are learning to accept correction, release control, and choose obedience over comfort.\nRemain watchful, for self-denial is preserved through daily prayer.",
-          verse: "“Then He said to them all, ‘If anyone desires to come after Me, let him deny himself, and take up his cross daily, and follow Me.’” (Luke 9:23)"
+          title: "40–50 : A Will Being Surrendered",
+          description: "Your answers show a growing willingness to let Christ lead rather than the ego. You are learning to accept correction, release control, and choose obedience over comfort. Remain watchful, for self-denial is preserved through daily prayer.",
+          match: "“Then He said to them all, ‘If anyone desires to come after Me, let him deny himself, and take up his cross daily, and follow Me.’” (Luke 9:23)"
         },
         'believingHesitating': {
           title: "30–39 : Desire for God, Resistance Within",
-          description: "You desire God sincerely, yet self-will, fear, or pride still resists surrender.\nThis is a place of struggle, not hypocrisy.\nGod is calling you to deeper trust and quieter obedience.",
-          verse: "“For I delight in the law of God according to the inward man. But I see another law in my members, warring against the law of my mind, and bringing me into captivity to the law of sin which is in my members.” (Romans 7:22–23)"
+          description: "You desire God sincerely, yet self-will, fear, or pride still resists surrender. This is a place of struggle, not hypocrisy. God is calling you to deeper trust and quieter obedience.",
+          match: "“For I delight in the law of God according to the inward man. But I see another law in my members, warring against the law of my mind, and bringing me into captivity to the law of sin which is in my members.” (Romans 7:22–23)"
         },
         'faithWithoutSurrender': {
           title: "20–29 : Self Still in Control",
-          description: "There is likely defensiveness, self-protection, or difficulty accepting correction.\nThis is a warning zone: unchecked self-will weakens spiritual life.\nGod invites you to lay down what is silently harming you.",
-          verse: "“Pride goes before destruction, And a haughty spirit before a fall.” (Proverbs 16:18)"
+          description: "There is likely defensiveness, self-protection, or difficulty accepting correction. This is a warning zone: unchecked self-will weakens spiritual life. God invites you to lay down what is silently harming you.",
+          match: "“Pride goes before destruction, And a haughty spirit before a fall.” (Proverbs 16:18)"
         },
         'faithReduced': {
           title: "10–19 : Ego Governing the Heart",
-          description: "This indicates that self-importance, pride, or fear of being wrong is blocking spiritual growth.\nChrist does not reject , He calls.\nHumility is the doorway back to peace and grace.",
-          verse: "“I tell you, this man went down to his house justified rather than the other; for everyone who exalts himself will be humbled, and he who humbles himself will be exalted.” (Luke 18:14)"
+          description: "This indicates that self-importance, pride, or fear of being wrong is blocking spiritual growth. Christ does not reject, He calls. Humility is the doorway back to peace and grace.",
+          match: "“I tell you, this man went down to his house justified rather than the other; for everyone who exalts himself will be humbled, and he who humbles himself will be exalted.” (Luke 18:14)"
         }
       };
 
