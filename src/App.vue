@@ -13,7 +13,7 @@
 
 
         
-        <div>WEEK 3 : PURITY OF HEART</div>
+        <div>WEEK 3 : PURITY OF HEART</div
                 <br/>    
 
 
@@ -179,29 +179,29 @@ export default {
       totalScore: 0,
       questions: [],
       questions_en: [
-        { text: "My intentions are clean before God.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I am the same person privately and publicly.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I avoid comparison and envy.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I confess sin instead of managing it.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I protect my eyes, ears, and mind.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I don’t manipulate or exaggerate.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "My relationships are clean from hidden agendas.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I forgive instead of resenting silently.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I refuse flattery, gossip, or secret alliances.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "My conscience is at peace before God.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] }
+        { text: "I value obedience above comfort.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I can let go without needing the last word.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I surrender my will in prayer.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I don’t demand credit or attention.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I don’t build cases to defend myself.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I accept correction without resentment.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I can stay silent when pride wants to speak.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I choose peace over proving rightness.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I trust God when I feel unseen.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "Christ’s will is above my comfort.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] }
       ],
       // Mirror English questions for Arabic for now as no translations provided
       questions_ar: [
-        { text: "My intentions are clean before God.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I am the same person privately and publicly.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I avoid comparison and envy.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I confess sin instead of managing it.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I protect my eyes, ears, and mind.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I don’t manipulate or exaggerate.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "My relationships are clean from hidden agendas.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I forgive instead of resenting silently.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I refuse flattery, gossip, or secret alliances.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "My conscience is at peace before God.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] }
+        { text: "I value obedience above comfort.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I can let go without needing the last word.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I surrender my will in prayer.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I don’t demand credit or attention.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I don’t build cases to defend myself.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I accept correction without resentment.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I can stay silent when pride wants to speak.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I choose peace over proving rightness.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I trust God when I feel unseen.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "Christ’s will is above my comfort.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] }
       ]
     };
   },
@@ -229,24 +229,24 @@ export default {
 
       const resultsData = {
         'faithGoverned': {
-          title: "40–50 : A Heart Being Kept Before God",
-          description: "Your answers indicate a life that is being lived in honesty before God. There is confession, repentance, and desire for inner integrity. Continue guarding the heart, because purity is preserved through humility and watchfulness.",
-          match: "“Blessed are the pure in heart, for they shall see God.” (Matthew 5:8)"
+          title: "40–50: A Will Being Surrendered",
+          description: "Your answers show a growing willingness to let Christ lead rather than the ego. You are learning to accept correction, release control, and choose obedience over comfort. Remain watchful, for self-denial is preserved through daily prayer.",
+          match: "“Then He said to them all, ‘If anyone desires to come after Me, let him deny himself, and take up his cross daily, and follow Me.’” (Luke 9:23)"
         },
         'believingHesitating': {
-          title: "30–39 : Mixed Motives, Unsettled Conscience",
-          description: "You desire to be right with God, but some areas may still be hidden, avoided, or unexamined. This is the place where God gently calls for deeper honesty, not perfection.",
-          match: "“Behold, You desire truth in the inward parts, And in the hidden part You will make me to know wisdom.” (Psalm 51:6)"
+          title: "30–39 : Desire for God, Resistance Within",
+          description: "You desire God sincerely, yet self-will, fear, or pride still resists surrender. This is a place of struggle, not hypocrisy. God is calling you to deeper trust and quieter obedience.",
+          match: "“For I delight in the law of God according to the inward man. But I see another law in my members, warring against the law of my mind, and bringing me into captivity to the law of sin which is in my members.” (Romans 7:22–23)"
         },
         'faithWithoutSurrender': {
-          title: "20–29 : Divided Inner Life",
-          description: "There may be compromise, secrecy, or inner conflict. This is not hopelessness; it is an invitation to open what has been closed and allow God to cleanse what has been hidden.",
-          match: "“He who covers his sins will not prosper, But whoever confesses and forsakes them will have mercy.” (Proverbs 28:13)"
+          title: "20–29 : Self Still in Control",
+          description: "There is likely defensiveness, self-protection, or difficulty accepting correction. This is a warning zone: unchecked self-will weakens spiritual life. God invites you to lay down what is silently harming you.",
+          match: "“Pride goes before destruction, And a haughty spirit before a fall.” (Proverbs 16:18)"
         },
         'faithReduced': {
-          title: "10–19 : Conscience in Need of Healing",
-          description: "This indicates a heart burdened by unconfessed or unresolved inner struggle. God is not far, but He is waiting for truth. Healing begins when what is hidden is brought into the light.",
-          match: "“When I kept silent, my bones grew old. Through my groaning all the day long. For day and night Your hand was heavy upon me; My vitality was turned into the drought of summer.” (Psalm 32:3–4)"
+          title: "10–19 : Ego Governing the Heart",
+          description: "This indicates that self-importance, pride, or fear of being wrong is blocking spiritual growth. Christ does not reject , He calls. Humility is the doorway back to peace and grace.",
+          match: "“I tell you, this man went down to his house justified rather than the other; for everyone who exalts himself will be humbled, and he who humbles himself will be exalted.” (Luke 18:14)"
         }
       };
 
