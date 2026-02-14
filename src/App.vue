@@ -13,7 +13,7 @@
 
 
         
-        <div>WEEK 4 : SELF-DENIAL</div
+        <div>WEEK 5 : SPIRITUAL OR CARNAL</div
                 <br/>    
 
 
