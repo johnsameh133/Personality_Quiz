@@ -174,34 +174,54 @@ export default {
       language_select: false,
       currentQuestionIndex: 0,
       showResults: false,
-      answers: Array(10).fill(null),
+      answers: Array(20).fill(null),
       results: [],
       totalScore: 0,
       questions: [],
       questions_en: [
-        { text: "I value obedience above comfort.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I can let go without needing the last word.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I surrender my will in prayer.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I don’t demand credit or attention.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I don’t build cases to defend myself.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I accept correction without resentment.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I can stay silent when pride wants to speak.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I choose peace over proving rightness.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I trust God when I feel unseen.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "Christ’s will is above my comfort.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] }
+        { text: "My thoughts are shaped by the Spirit, not impulses.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I resist sinful desires rather than excuse them.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I choose spiritual nourishment consistently.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "My reactions show self-control.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I don’t justify sin or compromise.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I hunger for God’s presence.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I discipline my body and mind.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I submit my desires to God.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I pursue life and peace.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "The Spirit governs my daily choices.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "My prayer is honest, not performative.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I fast for God, not for spiritual identity.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I give without expecting appreciation.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I have secret practices no one knows.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I repent quickly when I fall.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I fast from negative speech, not only food.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "My prayer life is relational, not ritual.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I give from sacrifice, not excess.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I avoid spiritual pride or comparison.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "God sees my devotion more than people do.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] }
       ],
       // Mirror English questions for Arabic for now as no translations provided
       questions_ar: [
-        { text: "I value obedience above comfort.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I can let go without needing the last word.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I surrender my will in prayer.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I don’t demand credit or attention.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I don’t build cases to defend myself.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I accept correction without resentment.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I can stay silent when pride wants to speak.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I choose peace over proving rightness.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "I trust God when I feel unseen.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
-        { text: "Christ’s will is above my comfort.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] }
+        { text: "My thoughts are shaped by the Spirit, not impulses.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I resist sinful desires rather than excuse them.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I choose spiritual nourishment consistently.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "My reactions show self-control.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I don’t justify sin or compromise.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I hunger for God’s presence.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I discipline my body and mind.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I submit my desires to God.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I pursue life and peace.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "The Spirit governs my daily choices.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "My prayer is honest, not performative.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I fast for God, not for spiritual identity.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I give without expecting appreciation.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I have secret practices no one knows.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I repent quickly when I fall.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I fast from negative speech, not only food.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "My prayer life is relational, not ritual.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I give from sacrifice, not excess.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "I avoid spiritual pride or comparison.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] },
+        { text: "God sees my devotion more than people do.", options: [{text: "1", category: 1}, {text: "2", category: 2}, {text: "3", category: 3}, {text: "4", category: 4}, {text: "5", category: 5}] }
       ]
     };
   },
@@ -222,31 +242,31 @@ export default {
       const totalScore = this.answers.reduce((acc, curr) => acc + (parseInt(curr) || 0), 0);
       
       let resultKey = '';
-      if (totalScore >= 40) resultKey = 'faithGoverned';
-      else if (totalScore >= 30) resultKey = 'believingHesitating';
-      else if (totalScore >= 20) resultKey = 'faithWithoutSurrender';
-      else resultKey = 'faithReduced';
+      if (totalScore >= 80) resultKey = 'lifeLedBySpirit';
+      else if (totalScore >= 60) resultKey = 'dividedInnerLife';
+      else if (totalScore >= 40) resultKey = 'fleshDominating';
+      else resultKey = 'lifeGovernedByFlesh';
 
       const resultsData = {
-        'faithGoverned': {
-          title: "40–50 : A Will Being Surrendered",
-          description: "Your answers show a growing willingness to let Christ lead rather than the ego. You are learning to accept correction, release control, and choose obedience over comfort. Remain watchful, for self-denial is preserved through daily prayer.",
-          match: "“Then He said to them all, ‘If anyone desires to come after Me, let him deny himself, and take up his cross daily, and follow Me.’” (Luke 9:23)"
+        'lifeLedBySpirit': {
+          title: "80–100 : Life Being Led by the Spirit",
+          description: "Your answers show that your thoughts, desires, and habits are increasingly shaped by the Spirit. Prayer, discipline, and repentance are active in your inner life. Remain watchful, for the flesh is always waiting to regain control.",
+          match: "“For to be carnally minded is death, but to be spiritually minded is life and peace.” (Romans 8:6)"
         },
-        'believingHesitating': {
-          title: "30–39 : Desire for God, Resistance Within",
-          description: "You desire God sincerely, yet self-will, fear, or pride still resists surrender. This is a place of struggle, not hypocrisy. God is calling you to deeper trust and quieter obedience.",
-          match: "“For I delight in the law of God according to the inward man. But I see another law in my members, warring against the law of my mind, and bringing me into captivity to the law of sin which is in my members.” (Romans 7:22–23)"
+        'dividedInnerLife': {
+          title: "60–79 : A Divided Inner Life",
+          description: "There is a real spiritual struggle inside you. The Spirit is present, but the flesh is still strong. This is the place where daily choices decide which voice will grow.",
+          match: "“For the flesh lusts against the Spirit, and the Spirit against the flesh; and these are contrary to one another, so that you do not do the things that you wish.” (Galatians 5:17)"
         },
-        'faithWithoutSurrender': {
-          title: "20–29 : Self Still in Control",
-          description: "There is likely defensiveness, self-protection, or difficulty accepting correction. This is a warning zone: unchecked self-will weakens spiritual life. God invites you to lay down what is silently harming you.",
-          match: "“Pride goes before destruction, And a haughty spirit before a fall.” (Proverbs 16:18)"
+        'fleshDominating': {
+          title: "40–59 : Flesh Dominating Many Areas",
+          description: "Spiritual desire may exist, but discipline and surrender are weak. Comfort, impulse, or habit often overrules conscience. God is calling you to return to prayer, fasting, and obedience.",
+          match: "“For I know that in me (that is, in my flesh) nothing good dwells; for to will is present with me, but how to perform what is good I do not find.” (Romans 7:18)"
         },
-        'faithReduced': {
-          title: "10–19 : Ego Governing the Heart",
-          description: "This indicates that self-importance, pride, or fear of being wrong is blocking spiritual growth. Christ does not reject, He calls. Humility is the doorway back to peace and grace.",
-          match: "“I tell you, this man went down to his house justified rather than the other; for everyone who exalts himself will be humbled, and he who humbles himself will be exalted.” (Luke 18:14)"
+        'lifeGovernedByFlesh': {
+          title: "20–39 : Life Governed by the Flesh",
+          description: "This indicates that self, impulse, or sin is currently directing your life more than the Spirit. This does not mean God has left you , but it does mean repentance and confession are urgently needed. Freedom begins when the flesh is no longer obeyed.",
+          match: "“So then, those who are in the flesh cannot please God.” (Romans 8:8)"
         }
       };
 
